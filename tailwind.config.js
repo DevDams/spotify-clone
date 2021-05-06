@@ -15,7 +15,15 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'spoGreen': '#1DB954',
+        'spoBlack': '#191414',
+        'dark': '#121212',
+        'light': '#282828',
+        'lightess': '#B3B3B3'
+      }
+    },
   },
   variants: {
     extend: {},
