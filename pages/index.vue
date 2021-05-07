@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen">
+  <div class="w-screen h-screen tracking-wide">
     <div class="w-60 h-screen fixed left-0 bg-black z-20">
       <!-- Logo -->
       <div class="logo pt-6 ml-6">
@@ -87,6 +87,7 @@
     <!-- ml-12 mr-72  -->
     <div class="fixed w-screen h-screen ml-60 bg-spoBlack">
       <div class="content">
+        <!-- Searchbar, account, subscription button -->
         <div class="top-content h-80">
           <div class="header h-16 flex justify-between items-center">
             <div class="searchbar flex items-center ml-8 mr-72">
@@ -121,6 +122,54 @@
                 dams9ix
                 <svg role="img" height="16" width="16" viewBox="0 0 16 16"><path fill="#fff" d="M3 6l5 5.794L13 6z"></path></svg>
               </button>
+            </div>
+          </div>
+          <!-- FIRST BLOCK OF CONTENT -->
+          <div class="content-box-1 ml-8 mt-5">
+            <h1 class="text-white text-3xl font-bold">Bon après-midi</h1>
+            <div class="box-1-line-1 flex mt-6">
+              <div class="box-1 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+                <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
+                <p class="text-white ml-4 font-semibold">Love song</p>
+              </div>
+              <div class="box-2 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+                <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
+                <p class="text-white ml-4 font-semibold">Love song</p>
+              </div>
+              <div class="box-3 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+                <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
+                <p class="text-white ml-4 font-semibold">Love song</p>
+              </div>
+              <div class="box-4 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+                <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
+                <p class="text-white ml-4 font-semibold">Love song</p>
+              </div>
+              <div class="box-5 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+                <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
+                <p class="text-white ml-4 font-semibold">Love song</p>
+              </div>
+            </div>
+            <div class="box-1-line-2 flex mt-4">
+              <div class="box-1 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+                <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
+                <p class="text-white ml-4 font-semibold">Top 50 : Mondial</p>
+              </div>
+              <div class="box-2 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+                <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
+                <p class="text-white ml-4 font-semibold">Love song</p>
+              </div>
+              <div class="box-3 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+                <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
+                <p class="text-white ml-4 font-semibold">Love song</p>
+              </div>
+              <div class="box-4 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+                <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
+                <p class="text-white ml-4 font-semibold">Love song</p>
+              </div>
+              <div class="box-5 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+                <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
+                <p class="text-white ml-4 font-semibold">Love song</p>
+              </div>
             </div>
           </div>
         </div>
@@ -194,6 +243,7 @@ button {
 
 input {
   background: rgba(0, 0, 0, 0.507);
+  outline: none;
 }
 
 .create-icon {
