@@ -128,47 +128,47 @@
           <div class="content-box-1 ml-8 mt-5">
             <h1 class="text-white text-3xl font-bold">Bon après-midi</h1>
             <div class="box-1-line-1 flex mt-6">
-              <div class="box-1 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+              <div class="box box-1 flex items-center w-80 h-20 mr-8 rounded">
                 <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
                 <p class="text-white ml-4 font-semibold">Love song</p>
               </div>
-              <div class="box-2 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+              <div class="box box-2 flex items-center w-80 h-20 mr-8 rounded">
                 <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
-                <p class="text-white ml-4 font-semibold">Love song</p>
+                <p class="text-white ml-4 font-semibold">Playlist 1</p>
               </div>
-              <div class="box-3 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+              <div class="box box-3 flex items-center w-80 h-20 mr-8 rounded">
                 <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
-                <p class="text-white ml-4 font-semibold">Love song</p>
+                <p class="text-white ml-4 font-semibold">Rock japonais</p>
               </div>
-              <div class="box-4 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+              <div class="box box-4 flex items-center w-80 h-20 mr-8 rounded">
                 <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
-                <p class="text-white ml-4 font-semibold">Love song</p>
+                <p class="text-white ml-4 font-semibold">SCH - JVLIVS II</p>
               </div>
-              <div class="box-5 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+              <div class="box box-5 flex items-center w-80 h-20 mr-8 rounded">
                 <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
-                <p class="text-white ml-4 font-semibold">Love song</p>
+                <p class="text-white ml-4 font-semibold">Alone & Depressed</p>
               </div>
             </div>
             <div class="box-1-line-2 flex mt-4">
-              <div class="box-1 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+              <div class="box box-1 flex items-center w-80 h-20 mr-8 rounded">
                 <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
                 <p class="text-white ml-4 font-semibold">Top 50 : Mondial</p>
               </div>
-              <div class="box-2 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+              <div class="box box-2 flex items-center w-80 h-20 mr-8 rounded">
                 <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
-                <p class="text-white ml-4 font-semibold">Love song</p>
+                <p class="text-white ml-4 font-semibold">Mix Pop</p>
               </div>
-              <div class="box-3 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+              <div class="box box-3 flex items-center w-80 h-20 mr-8 rounded">
                 <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
-                <p class="text-white ml-4 font-semibold">Love song</p>
+                <p class="text-white ml-4 font-semibold">Hot Sauce</p>
               </div>
-              <div class="box-4 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+              <div class="box box-4 flex items-center w-80 h-20 mr-8 rounded">
                 <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
-                <p class="text-white ml-4 font-semibold">Love song</p>
+                <p class="text-white ml-4 font-semibold">Viral Hits</p>
               </div>
-              <div class="box-5 flex items-center w-80 h-20 bg-spoGreen mr-8 rounded">
+              <div class="box box-5 flex items-center w-80 h-20 mr-8 rounded">
                 <img src="~/assets/images/last.jpeg" alt="" class="w-20 rounded">
-                <p class="text-white ml-4 font-semibold">Love song</p>
+                <p class="text-white ml-4 font-semibold">PINK PLANET</p>
               </div>
             </div>
           </div>
@@ -279,5 +279,9 @@ input {
 .top-content {
   background-color: rgb(40, 152, 168);
   background-image: linear-gradient(rgba(0,0,0,.6) 0,#191414 100%);
+}
+
+.box {
+  background: #b3b3b32a;
 }
 </style>
