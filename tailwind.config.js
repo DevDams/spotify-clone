@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         'spoGreen': '#1DB954',
         'spoBlack': '#191414',
+        'darkBlack': '#181818',
         'dark': '#121212',
         'light': '#282828',
         'lightess': '#B3B3B3'
