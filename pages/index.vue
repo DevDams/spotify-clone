@@ -85,7 +85,7 @@
     </div>
     <!-- SONG PLAYLIST AND PODCAST -->
     <!-- ml-12 mr-72  -->
-    <div class="fixed w-screen h-screen ml-60 bg-dark">
+    <div class="BASE_CONTENT fixed w-screen ml-60 bg-dark overflow-scroll">
       <div class="content">
         <!-- Searchbar, account, subscription button -->
         <div class="top-content h-80">
@@ -206,44 +206,171 @@
             <h1 class="text-white text-2xl font-bold mt-8">Écoutés récemment</h1>
             <div class="playlist-row flex mt-6">
               <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
-                <img class="rounded-md" src="~/assets/images/hit.jpeg" alt="">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/hit.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
                 <p class="capitalize text-sm font-black text-white mt-6">It's Hits</p>
                 <p class="text-lightess text-sm mt-1">Nous avons concocté une playlist...</p>
               </div>
               <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
-                <img class="rounded-md" src="~/assets/images/capsule.jpeg" alt="">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/capsule.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
                 <p class="capitalize text-sm font-black text-white mt-6">Votre capsule temp...</p>
                 <p class="text-lightess text-sm mt-1">Nous avons concocté une playlist...</p>
               </div>
               <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
-                <img class="rounded-md" src="~/assets/images/viral.jpeg" alt="">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/viral.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
                 <p class="capitalize text-sm font-black text-white mt-6">Viral Hits</p>
                 <p class="text-lightess text-sm mt-1">Nous avons concocté une playlist...</p>
               </div>
               <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
-                <img class="rounded-md" src="~/assets/images/last.jpeg" alt="">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/last.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
                 <p class="capitalize text-sm font-black text-white mt-6">SCH - JVLIVS II</p>
                 <p class="text-lightess text-sm mt-1">Inclus "Loup noir", "Marché noir",...</p>
               </div>
               <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
-                <img class="rounded-md" src="~/assets/images/playlist.jpeg" alt="">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/playlist.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
                 <p class="capitalize text-sm font-black text-white mt-6">Playlist 1</p>
                 <p class="text-lightess text-sm mt-1">Par Dams9ix</p>
               </div>
               <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
-                <img class="rounded-md" src="~/assets/images/soft.jpeg" alt="">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/soft.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
                 <p class="capitalize text-sm font-black text-white mt-6">Soft Pop Hits</p>
                 <p class="text-lightess text-sm mt-1">Listening to easy song from your favorite...</p>
               </div>
               <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
-                <img class="rounded-md" src="~/assets/images/schradio.jpeg" alt="">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/schradio.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
                 <p class="capitalize text-sm font-black text-white mt-6">SCH Radio</p>
                 <p class="text-lightess text-sm mt-1">Par Spotify</p>
               </div>
               <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
-                <img class="rounded-md" src="~/assets/images/lsd.jpeg" alt="">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/lsd.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
                 <p class="capitalize text-sm font-black text-white mt-6">LABRINTH, SIA & DI...</p>
                 <p class="text-lightess text-sm mt-1">Sia, Diplo, Labrinth</p>
+              </div>
+            </div>
+          </div>
+          <!-- Create by -->
+          <div class="content-box-3 ml-8 mt-5">
+            <h1 class="text-white text-2xl font-bold mt-8">Crée pour Dams9ix</h1>
+            <p class="text-lightess text-sm">Plus vous écoutez, plus les recommandations s'améliorent</p>
+            <div class="playlist-row flex mt-6">
+              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/mix1.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
+                <p class="capitalize text-sm font-black text-white mt-6">Daily Mix 1</p>
+                <p class="text-lightess text-sm mt-1">Imagine Dragons, Clean Bandit, Adele...</p>
+              </div>
+              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/mix2.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
+                <p class="capitalize text-sm font-black text-white mt-6">Daily Mix 3</p>
+                <p class="text-lightess text-sm mt-1">The Chainsmokers, Kane Brown,...</p>
+              </div>
+              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/mix3.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
+                <p class="capitalize text-sm font-black text-white mt-6">Daily Mix 4</p>
+                <p class="text-lightess text-sm mt-1">Calum Scott, Ali Gatie, Billie Eilish et bien plus</p>
+              </div>
+              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/mix4.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
+                <p class="capitalize text-sm font-black text-white mt-6">Daily Mix 5</p>
+                <p class="text-lightess text-sm mt-1">SCH, Natasha St-Pier, Tsew The Kid...</p>
+              </div>
+              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/mix5.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
+                <p class="capitalize text-sm font-black text-white mt-6">Daily Mix 6</p>
+                <p class="text-lightess text-sm mt-1">Babes Nueue, Rjukan, Naario Daharis...</p>
+              </div>
+              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/radar.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
+                <p class="capitalize text-sm font-black text-white mt-6">Radar des sorties</p>
+                <p class="text-lightess text-sm mt-1">Découvrez l'actu musicale de vos artist...</p>
+              </div>
+              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/discover.jpeg" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
+                <p class="capitalize text-sm font-black text-white mt-6">Découvertes de la s...</p>
+                <p class="text-lightess text-sm mt-1">Votre compil hebdo d'inédits.</p>
+              </div>
+              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+                <div class="image relative">
+                  <img class="rounded-md" src="~/assets/images/family.png" alt="">
+                  <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
+                    <svg height="16" role="img" width="16" viewBox="0 0 24 24" aria-hidden="true"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="white"></polygon></svg>
+                  </button>
+                </div>
+                <p class="capitalize text-sm font-black text-white mt-6">Family Mix</p>
+                <p class="text-lightess text-sm mt-1">Découvrez le Mix Famille</p>
               </div>
             </div>
           </div>
@@ -321,6 +448,14 @@ input {
   outline: none;
 }
 
+.BASE_CONTENT {
+  height: 950px;
+}
+
+.content-box-3 {
+  padding-bottom: 70px;
+}
+
 .create-icon {
   display: flex;
   align-items: center;
@@ -377,5 +512,11 @@ input {
 
 .playlist-1 {
   height: 17.5rem;
+}
+
+.playlist-1 .image:hover button {
+  display: block;
+  transition: .5s ease-in-out;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.5);
 }
 </style>
