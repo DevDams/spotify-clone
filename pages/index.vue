@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-screen tracking-wide">
+  <div class="w-screen h-screen tracking-wide flex">
     <div class="w-60 h-screen fixed left-0 bg-black z-20">
       <!-- Logo -->
       <div class="logo pt-6 ml-6">
@@ -48,38 +48,39 @@
         </div>
         <div class="line mt-2 w-10/12 h-px mx-auto bg-lightess opacity-30"></div>
         <!-- All playlist -->
-        <div class="playlist">
-          <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
-            GIVEN Anime Sound...
-          </p>
-          <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
-            Car Music 2021
-          </p>
-          <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
-            Emotional Chill 2021
-          </p>
-          <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
-            Lofi japan Japanese bea...
-          </p>
-          <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
-            Love song
-          </p>
-          <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
-            CAR MUSIC 2021
-          </p>
-          <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
-            Playlist 1
-          </p>
-        </div>
-        <!-- Last listen -->
-        <div class="last w-60 mt-24 -ml-2">
-          <div class="flex items-center ml-4">
-            <svg role="img" height="20" width="20" viewBox="0 0 24 24"><path fill="#fff" d="M11.5 0C5.149 0 0 5.148 0 11.5 0 17.851 5.149 23 11.5 23S23 17.851 23 11.5C23 5.148 17.851 0 11.5 0zm0 22C5.71 22 1 17.29 1 11.5S5.71 1 11.5 1 22 5.71 22 11.5 17.29 22 11.5 22zm.499-6.842V5h-1v10.149l-3.418-3.975-.758.652 4.678 5.44 4.694-5.439-.757-.653-3.439 3.984z"></path></svg>
-            <p class="font-semibold ml-2 text-white text-sm opacity-70 hover:opacity-100">
-              Installer l'appli
+        <div class="menu-playlist overflow-scroll">
+          <div class="playlist h-64 overflow-scroll">
+            <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
+              GIVEN Anime Sound...
+            </p>
+            <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
+              Car Music 2021
+            </p>
+            <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
+              Emotional Chill 2021
+            </p>
+            <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
+              Lofi japan Japanese bea...
+            </p>
+            <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
+              Love song
+            </p>
+            <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
+              CAR MUSIC 2021
+            </p>
+            <p class="text-white font-normal text-sm opacity-70 hover:opacity-100 pt-4 ml-4">
+              Playlist 1
             </p>
           </div>
-          <img src="~/assets/images/last.jpeg" alt="SCH album" class="pt-4">
+          <!-- Last listen -->
+          <div class="last absolute bottom-28 -ml-2">
+            <div class="flex items-center ml-4">
+              <svg role="img" height="20" width="20" viewBox="0 0 24 24"><path fill="#fff" d="M11.5 0C5.149 0 0 5.148 0 11.5 0 17.851 5.149 23 11.5 23S23 17.851 23 11.5C23 5.148 17.851 0 11.5 0zm0 22C5.71 22 1 17.29 1 11.5S5.71 1 11.5 1 22 5.71 22 11.5 17.29 22 11.5 22zm.499-6.842V5h-1v10.149l-3.418-3.975-.758.652 4.678 5.44 4.694-5.439-.757-.653-3.439 3.984z"></path></svg>
+              <p class="font-semibold ml-2 text-white text-sm opacity-70 hover:opacity-100">
+                Installer l'appli
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -205,7 +206,7 @@
           <div class="content-box-2 ml-8 mt-5">
             <h1 class="text-white text-2xl font-bold mt-8">Écoutés récemment</h1>
             <div class="playlist-row flex mt-6">
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/hit.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -215,7 +216,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">It's Hits</p>
                 <p class="text-lightess text-sm mt-1">Nous avons concocté une playlist...</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-2 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/capsule.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -225,7 +226,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">Votre capsule temp...</p>
                 <p class="text-lightess text-sm mt-1">Nous avons concocté une playlist...</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-3 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/viral.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -235,7 +236,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">Viral Hits</p>
                 <p class="text-lightess text-sm mt-1">Nous avons concocté une playlist...</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-4 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/last.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -245,7 +246,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">SCH - JVLIVS II</p>
                 <p class="text-lightess text-sm mt-1">Inclus "Loup noir", "Marché noir",...</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-5 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/playlist.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -255,7 +256,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">Playlist 1</p>
                 <p class="text-lightess text-sm mt-1">Par Dams9ix</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-6 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/soft.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -265,7 +266,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">Soft Pop Hits</p>
                 <p class="text-lightess text-sm mt-1">Listening to easy song from your favorite...</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-7 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/schradio.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -275,7 +276,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">SCH Radio</p>
                 <p class="text-lightess text-sm mt-1">Par Spotify</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-8 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/lsd.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -292,7 +293,7 @@
             <h1 class="text-white text-2xl font-bold mt-8">Crée pour Dams9ix</h1>
             <p class="text-lightess text-sm">Plus vous écoutez, plus les recommandations s'améliorent</p>
             <div class="playlist-row flex mt-6">
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/mix1.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -302,7 +303,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">Daily Mix 1</p>
                 <p class="text-lightess text-sm mt-1">Imagine Dragons, Clean Bandit, Adele...</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-2 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/mix2.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -312,7 +313,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">Daily Mix 3</p>
                 <p class="text-lightess text-sm mt-1">The Chainsmokers, Kane Brown,...</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-3 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/mix3.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -322,7 +323,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">Daily Mix 4</p>
                 <p class="text-lightess text-sm mt-1">Calum Scott, Ali Gatie, Billie Eilish et bien plus</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-4 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/mix4.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -332,7 +333,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">Daily Mix 5</p>
                 <p class="text-lightess text-sm mt-1">SCH, Natasha St-Pier, Tsew The Kid...</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-5 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/mix5.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -342,7 +343,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">Daily Mix 6</p>
                 <p class="text-lightess text-sm mt-1">Babes Nueue, Rjukan, Naario Daharis...</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-6 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/radar.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -352,7 +353,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">Radar des sorties</p>
                 <p class="text-lightess text-sm mt-1">Découvrez l'actu musicale de vos artist...</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-7 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/discover.jpeg" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -362,7 +363,7 @@
                 <p class="capitalize text-sm font-black text-white mt-6">Découvertes de la s...</p>
                 <p class="text-lightess text-sm mt-1">Votre compil hebdo d'inédits.</p>
               </div>
-              <div class="playlist-1 w-48 p-4 mr-8 bg-darkBlack rounded-md">
+              <div class="playlist-1 box-8 w-48 p-4 mr-8 bg-darkBlack rounded-md">
                 <div class="image relative">
                   <img class="rounded-md" src="~/assets/images/family.png" alt="">
                   <button class="absolute bg-spoGreen p-3 rounded-full right-2 bottom-2 hidden">
@@ -378,55 +379,6 @@
       </div>
     </div>
     <!-- BOTTOM CONTROLE PLAY -->
-    <div class="fixed bottom-0 w-screen h-24 bg-dark z-30 flex">
-      <div class="current-play w-60 h-full flex items-center">
-        <div class="current-play--title ml-4 text-white">
-          <h3 class="text-sm">
-            Marché noir
-          </h3>
-          <span class="text-xs font-light">
-            SCH
-          </span>
-        </div>
-        <div class="like-add flex items-center">
-          <div class="like ml-5">
-            <svg role="img" height="16" width="16" viewBox="0 0 16 16"><path fill="#fff" d="M13.764 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253A4.05 4.05 0 00.974 5.61c0 1.089.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195A4.052 4.052 0 0014.96 5.61a4.057 4.057 0 00-1.196-2.883zm-.722 5.098L8.58 13.048c-.307.36-.921.36-1.228 0L2.864 7.797a3.072 3.072 0 01-.905-2.187c0-.826.321-1.603.905-2.187a3.091 3.091 0 012.191-.913 3.05 3.05 0 011.957.709c.041.036.408.351.954.351.531 0 .906-.31.94-.34a3.075 3.075 0 014.161.192 3.1 3.1 0 01-.025 4.403z"></path></svg>
-          </div>
-          <div class="add ml-5">
-            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="#fff" fill-rule="evenodd"><path d="M1 3v9h14V3H1zm0-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" fill-rule="nonzero"></path><path d="M10 8h4v3h-4z"></path></g></svg>
-          </div>
-        </div>
-      </div>
-      <!-- Player time -->
-      <div class="player-time w-full">
-        <div class="time h-full w-3/4 ml-36 flex flex-col items-center justify-center">
-          <div class="next-prev-btn h-12 flex items-center">
-            <!-- aleatoire -->
-            <svg role="img" height="24" width="24" viewBox="0 0 24 24"><path fill="#fff" d="M4.5 6.8l.7-.8C4.1 4.7 2.5 4 .9 4v1c1.3 0 2.6.6 3.5 1.6l.1.2zm7.5 4.7c-1.2 0-2.3-.5-3.2-1.3l-.6.8c1 1 2.4 1.5 3.8 1.5V14l3.5-2-3.5-2v1.5zm0-6V7l3.5-2L12 3v1.5c-1.6 0-3.2.7-4.2 2l-3.4 3.9c-.9 1-2.2 1.6-3.5 1.6v1c1.6 0 3.2-.7 4.2-2l3.4-3.9c.9-1 2.2-1.6 3.5-1.6z"></path></svg>
-            <!-- prev btn -->
-            <svg role="img" height="24" width="24" viewBox="0 0 24 24"><path fill="#fff" d="M13 2.5L5 7.119V3H3v10h2V8.881l8 4.619z"></path></svg>
-            <!-- play pause -->
-            <div class="play w-8 h-8 bg-white rounded-full">
-              <svg role="img" height="24" width="24" viewBox="0 0 24 24"><path fill="#000" d="M4.018 14L14.41 8 4.018 2z"></path></svg>
-            </div>
-            <!-- next btn -->
-            <svg role="img" height="24" width="24" viewBox="0 0 24 24"><path fill="#fff" d="M11 3v4.119L3 2.5v11l8-4.619V13h2V3z"></path></svg>
-            <!-- loop -->
-            <svg role="img" height="24" width="24" viewBox="0 0 24 24"><path fill="#191414" d="M0 0h16v16H0z"></path><path fill="#1DB954" d="M5 5v-.5V4c-2.2.3-4 2.2-4 4.5 0 .6.1 1.2.4 1.8l.9-.5C2.1 9.4 2 9 2 8.5 2 6.7 3.3 5.3 5 5zM10.5 12H6v-1.5l-3.5 2 3.5 2V13h4.5c1.9 0 3.5-1.2 4.2-2.8-.5.3-1 .5-1.5.6-.7.7-1.6 1.2-2.7 1.2zM11.5 0C9 0 7 2 7 4.5S9 9 11.5 9 16 7 16 4.5 14 0 11.5 0zm.9 7h-1.3V3.6H10v-1h.1c.2 0 .3 0 .4-.1.1 0 .3-.1.4-.2.1-.1.2-.2.2-.3.1-.1.1-.2.1-.3v-.1h1.1V7z"></path></svg>
-          </div>
-          <div class="player-progress w-full flex justify-center items-center">
-            <span class="player-current-time text-lightess text-xs">
-              0:00
-            </span>
-            <div class="progress-bar w-2/4 h-1 bg-light rounded mx-2"></div>
-            <span class="player-end-time text-lightess text-xs">
-              3:31
-            </span>
-          </div>
-        </div>
-        <div class="volume bg-lightess w-1/4 h-full"></div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -449,11 +401,15 @@ input {
 }
 
 .BASE_CONTENT {
-  height: 950px;
+  height: 100vh;
 }
 
+/* .menu-playlist {
+  height: 600px;
+} */
+
 .content-box-3 {
-  padding-bottom: 70px;
+  padding-bottom: 150px;
 }
 
 .create-icon {
@@ -518,5 +474,71 @@ input {
   display: block;
   transition: .5s ease-in-out;
   box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 2040px) {
+  .content-box-1 .box-5 {
+    display: none;
+  }
+
+  .content-box-2 .box-8 {
+    display: none;
+  }
+
+  .content-box-3 .box-8 {
+    display: none;
+  }
+}
+
+@media (max-width: 1800px) {
+  .content-box-2 .box-7 {
+    display: none;
+  }
+
+  .content-box-3 .box-7 {
+    display: none;
+  }
+}
+
+@media (max-width: 1800px) {
+  .content-box-1 .box-4 {
+    display: none;
+  }
+}
+
+@media (max-width: 1590px) {
+  .content-box-2 .box-6 {
+    display: none;
+  }
+
+  .content-box-3 .box-6 {
+    display: none;
+  }
+}
+
+@media (max-width: 1355px) {
+  .content-box-2 .box-5 {
+    display: none;
+  }
+
+  .content-box-3 .box-5 {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .content-box-1 .box-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 1145px) {
+  .content-box-2 .box-4 {
+    display: none;
+  }
+
+  .content-box-3 .box-4 {
+    display: none;
+  }
 }
 </style>

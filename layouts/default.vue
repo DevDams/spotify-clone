@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Nuxt />
-    <!-- ~ -->
+    <Nuxt mb-96 />
+    <BottomControl />
   </div>
 </template>
 
